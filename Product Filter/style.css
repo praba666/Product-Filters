@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  background-color: rgb(34, 31, 31);
+  padding: 1rem;
+}
+.control {
+  max-width: 1200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+#search {
+  width: 300px;
+  outline: none;
+  border-radius: 30px;
+}
+.btn-group button {
+  margin: 0 10px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-group button:hover,
+.btn-group .btn-clicked {
+  background-color: transparent;
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.box {
+  margin-top: 10px;
+  border: 5px solid white;
+  overflow: hidden;
+  height: 150px;
+  border-radius: 1px;
+}
+.box img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5;
+  transform-origin: top;
+}
+.box img:hover {
+  transform: scale(1.2);
+}
